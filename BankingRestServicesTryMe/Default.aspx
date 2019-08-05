@@ -6,7 +6,7 @@
         <div class="col-md-4">
             <h2>Banking Rest Services</h2>
             <p>
-                The Banking Rest Services API is comprised of RESTful services. They are consumed by the project in BankingServices repository, which in turn are consumed by the project in SOCBankingWebApp repository.
+                The Banking Rest Services API is comprised of RESTful services. They are consumed by the project in BankingServices repository (banking SOAP services), which in turn are consumed by the project in SOCBankingWebApp repository (banking web application).
             </p>
         </div>
         <div class="col-md-4">
