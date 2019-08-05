@@ -7,11 +7,11 @@
         <div class="col-md-8">
             <div class="form-horizontal">
                 <div class="form-group">
-                    <asp:Label runat="server" AssociatedControlID="Username" CssClass="col-md-6 control-label">Username</asp:Label>
+                    <asp:Label runat="server" AssociatedControlID="Salt" CssClass="col-md-6 control-label">Salt</asp:Label>
                     <div class="col-md-6">
-                        <asp:TextBox runat="server" ID="Username" CssClass="form-control" />
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Username"
-                            CssClass="text-danger" ErrorMessage="The Username field is required." />
+                        <asp:TextBox runat="server" ID="Salt" CssClass="form-control" />
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Salt"
+                            CssClass="text-danger" ErrorMessage="The Salt field is required." />
                     </div>
                 </div>
                 <div class="form-group">
@@ -63,9 +63,9 @@
         </tr>
         <tr>
             <td>Hasher</td>
-            <td>string (password), string (username)</td>
+            <td>string (password), string (salt)</td>
             <td>string (hashed password)</td>
-            <td> It generates a password by using the username as the salt & hashing it with the password (this security measure will be addressed soon).</td>
+            <td> It generates a password by adding the salt to the password & then hashing it (this may be updated soon).</td>
             <td>It uses SHA512CryptoServiceProvider.</td>
         </tr>
     </table>

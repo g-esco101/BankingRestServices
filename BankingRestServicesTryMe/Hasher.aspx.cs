@@ -26,9 +26,9 @@ namespace BankingRestServicesTryMe
                 // Create the base address
                 Uri baseUri = new Uri("http://localhost:54193/Service.svc");
                 // Create the path from tree root to the child node
-                UriTemplate myTemplate = new UriTemplate("hash/{password}/{user}");
+                UriTemplate myTemplate = new UriTemplate("hash/{password}/{salt}");
                 // Assign values to variables to complete Uri
-                Uri completeUri = myTemplate.BindByPosition(baseUri, Password.Text, Username.Text);
+                Uri completeUri = myTemplate.BindByPosition(baseUri, Password.Text, Salt.Text);
                 WebClient proxy = new WebClient();
                 byte[] abc = proxy.DownloadData(completeUri);
                 Stream strm = new MemoryStream(abc);

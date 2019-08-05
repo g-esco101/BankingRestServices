@@ -13,13 +13,13 @@ namespace BankingRestServicesTryMe {
     public partial class Hasher {
         
         /// <summary>
-        /// Username control.
+        /// Salt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Username;
+        protected global::System.Web.UI.WebControls.TextBox Salt;
         
         /// <summary>
         /// Password control.

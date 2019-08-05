@@ -9,10 +9,10 @@
                 <div class="form-group">
                     <asp:Label runat="server" AssociatedControlID="Operand1" CssClass="col-md-6 control-label">Operand 1</asp:Label>
                     <div class="col-md-6">
-                        <asp:TextBox runat="server" ID="Operand1" CssClass="form-control" />
+                        <asp:TextBox runat="server" ID="Operand1" CssClass="form-control" placeholder="e.g., 1000 or 1000.50" />
                         <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator"
-                            ControlToValidate="Operand1" ValidationExpression="^\d+$"
-                            ErrorMessage="Please Enter Numbers Only" Display="Dynamic" SetFocusOnError="True" />
+                            ControlToValidate="Operand1" ValidationExpression="^\d+(\.\d\d)?$"
+                            ErrorMessage="Please Enter Numbers Only (e.g., 1000 or 1000.50)" Display="Dynamic" SetFocusOnError="True" />
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Operand1"
                             CssClass="text-danger" ErrorMessage="The Operand1 field is required." />
                     </div>
@@ -20,10 +20,10 @@
                 <div class="form-group">
                     <asp:Label runat="server" AssociatedControlID="Operand2" CssClass="col-md-6 control-label">Operand 2</asp:Label>
                     <div class="col-md-6">
-                        <asp:TextBox runat="server" ID="Operand2" CssClass="form-control" />
+                        <asp:TextBox runat="server" ID="Operand2" CssClass="form-control" placeholder="e.g., 1000 or 1000.50" />
                         <asp:RegularExpressionValidator runat="server" ID="RegularExpressionValidator1"
-                            ControlToValidate="Operand2" ValidationExpression="^\d+$"
-                            ErrorMessage="Please Enter Numbers Only" Display="Dynamic" SetFocusOnError="True" />
+                            ControlToValidate="Operand2" ValidationExpression="^\d+(\.\d\d)?$"
+                            ErrorMessage="Please Enter Numbers Only (e.g., 1000 or 1000.50)" Display="Dynamic" SetFocusOnError="True" />
                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Operand2"
                             CssClass="text-danger" ErrorMessage="The Operand2 field is required." />
                     </div>
